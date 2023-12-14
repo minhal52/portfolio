@@ -5,8 +5,16 @@ window.addEventListener("scroll", function(){
 });
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
-
+let isButtonClicked=false;
 menu.onclick= ()=>{
+    isButtonClicked = !isButtonClicked;
     menu.classList.toggle('bx-x');
     navlist.classList.toggle('active');
+    if(isButtonClicked){
+        navlist.style.display="flex";
+    }
+    else{
+        navlist.style.display="none";
+    }
+    
 };

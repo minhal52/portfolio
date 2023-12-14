@@ -466,7 +466,7 @@ form .send-btn:hover{
     right: 0;
     width: 255px;
     min-height: 100vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     background: var(--bg-color);
     transition: all .50s ease;
